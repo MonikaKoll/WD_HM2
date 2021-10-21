@@ -1,0 +1,180 @@
+* {
+  background-color: white;
+}
+
+body {
+  background-color: white;
+}
+
+/* flexbox */
+nav {
+  height: 35px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav div img {
+  height: 25px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* adjacent sibling selector */
+h3 {
+  color: darkgrey;
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+/* general sibling selector */
+div [class*="no-image"] ~ p {
+  font-style: italic;
+  margin-left: 10px;
+}
+
+/* id selector */
+#profile {
+  border-radius: 50%;
+}
+
+nav div.search {
+  width: 700px;
+}
+
+/* child selector */
+nav div.search > input {
+  box-sizing: border-box;
+  height: 25px;
+  width: 80%;
+  margin: 0;
+  border: 1px solid gray;
+}
+
+nav div.search > button {
+  box-sizing: border-box;
+  height: 25px;
+  width: 20%;
+  margin: 0;
+  border: 1px solid gray;
+  cursor: pointer;
+  background-color: #1778bd;
+  color: white;
+}
+
+/* class selector 1 */
+.content {
+  display: flex;
+  justify-content: center;
+  background-color: #1778bd;
+}
+
+section {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+/* class selector 2 */
+.image-box {
+  width: 50%;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 5px;
+  margin: 30px;
+  box-shadow: -1px 1px 5px 9px gainsboro;
+}
+
+.top {
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+/* descendant selector */
+div img {
+  width: 100%;
+  height: auto;
+}
+
+/* LIKE NUPP */
+.btn {
+  height: 40px;
+  width: 60px;
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5%;
+}
+
+/* pseudo-class */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+i[class*="fa fa-thumbs-up"] {
+  background:transparent;
+}
+
+
+
+/* Dropdown Button */
+.dropbtn {
+  background: url(../content/profile.png);
+  background-size: 32px;
+  padding: 16px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  float: right;
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  right: 0;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  padding: 10px;
+  min-width: 150px;
+}
+
+/* Text inside the dropdown */
+.dropdown-content p {
+  color: black;
+  background-color: #f1f1f1;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
